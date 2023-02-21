@@ -1,18 +1,12 @@
+import defaultTasks from './data';
 import { Header } from "./components/Header";
 import { TaskInput } from "./components/TaskInput";
 import { Tasks } from "./components/Tasks";
 import { useState } from 'react';
 import { TaskInterface } from './types/index';
-import { v4 as uuidv4 } from "uuid";
 
 function App() {
-  const [tasks, setTasks] = useState<TaskInterface[]>([
-    {
-      id: uuidv4(),
-      title: 'Teste',
-      isCompleted: false
-    }
-  ]);
+  const [tasks, setTasks] = useState<TaskInterface[]>(defaultTasks);
 
   const addTask = (task: TaskInterface) => setTasks([...tasks, task]);
   const removeTask = (id: string) => setTasks(tasks.filter((task) => task.id !== id));

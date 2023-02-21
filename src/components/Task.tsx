@@ -15,19 +15,28 @@ export default function Task({task, removeTask, changeTaskStatus}: TaskProps) {
       task.id,
       event.target.checked
     );
-  }
+  };
 
   return (
     <div className={style.taskWrapper}>
       <input
         type="checkbox"
+        checked={task.isCompleted}
         onChange={handleInputChange}
       />
-      <p>{task.title}</p>
-      <Trash
-        size={16}
+      <div>
+        <p>{task.title}</p>
+      </div>
+      <button
+        type='button'
+        aria-label="Remover tarefa"
         onClick={() => removeTask(task.id)}
-      />
+      >
+        <Trash
+          size={16}
+          color="#808080"
+        />
+      </button>
     </div>
   )
 }
