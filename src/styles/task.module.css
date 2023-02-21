@@ -1,0 +1,18 @@
+.taskWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 16px;
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  width: 100%;
+  min-height: 4.5rem;
+}
+
+.taskWrapper input {
+
+}
+
+.taskWrapper svg {
+  cursor: pointer;
+}

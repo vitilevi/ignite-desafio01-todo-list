@@ -13,6 +13,7 @@
   border: 1px solid var(--gray-700);
   border-radius: 8px;
   background-color: var(--gray-500);
+  color: var(--gray-100);
 }
 
 .taskInputWrapper button {
@@ -28,6 +29,7 @@
   border-radius: 8px;
   background-color: var(--blue-dark);
   color: var(--gray-100);
+  cursor: pointer;
 }
 
 .taskInputWrapper button svg {
