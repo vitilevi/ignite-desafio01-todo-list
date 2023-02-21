@@ -1,9 +1,10 @@
 .tasksWrapper {
   display: flex;
   flex-direction: column;
-  margin: 64px auto;
+  margin: 56px auto;
   width: 100%;
-  max-width: 46rem;
+  max-width: calc(46rem + 20px);
+  padding: 10px;
 }
 
 .header {
@@ -37,11 +38,11 @@
   font-weight: 700;
 }
 
-.created p{
+.created p {
   color: var(--blue);
 }
 
-.completed p{
+.completed p {
   color: var(--purple)
 }
 
