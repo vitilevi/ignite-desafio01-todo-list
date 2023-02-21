@@ -1,0 +1,56 @@
+.taskWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  width: 100%;
+  min-height: 4.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.taskWrapper input {
+  display: none;
+}
+
+.taskWrapper label {
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.taskWrapper label > input:checked ~ div p {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.taskWrapper label svg {
+  flex: 1 0 auto;
+}
+
+.checked {
+  z-index: 3;
+}
+
+.taskWrapper div {
+  display: flex;
+  width: 100%;
+}
+
+.taskWrapper div p {
+  font-size: 0.875rem;
+  padding-right: 1rem;
+  line-height: 1.5;
+}
+
+.taskWrapper svg {
+  cursor: pointer;
+}
+
+.taskWrapper button {
+  background-color: transparent;
+  border: unset;
+}
