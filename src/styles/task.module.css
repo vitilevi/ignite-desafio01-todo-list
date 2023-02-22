@@ -31,10 +31,6 @@
   flex: 1 0 auto;
 }
 
-.checked {
-  z-index: 3;
-}
-
 .taskWrapper div {
   display: flex;
   width: 100%;
