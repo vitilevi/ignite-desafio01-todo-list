@@ -20,7 +20,7 @@ export function TaskInput({addTask}: TaskInputProps) {
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    if (inputRef.current) {
+    if (inputRef.current && inputRef.current.value.length > 0) {
       addTask({
         id: uuidv4(),
         title: inputRef.current.value,
