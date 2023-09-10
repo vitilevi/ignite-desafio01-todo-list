@@ -10,7 +10,7 @@
 ## Como instalar e rodar o projeto:
 
 1. Clone o repositório
-  * `git clone https://github.com/vitilevi/your-sneaker.git`.
+  * `git clone https://github.com/vitilevi/ignite-desafio01-todo-list.git`.
   * Entre na pasta do repositório que você acabou de clonar:
     * `cd ignite-desafio01-todo-list`
 
